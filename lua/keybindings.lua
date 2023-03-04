@@ -3,6 +3,7 @@ vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
 local opt = {noremap = true, silent = true }
+map("i", "jj", "<ESC>", opt)
 
 -- 取消 s 默认功能
 map("n", "s", "", opt)
@@ -48,7 +49,6 @@ map("v", ">", ">gv", opt)
 -- 上下移动选中文本
 map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
-
 
 
 
