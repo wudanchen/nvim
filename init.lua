@@ -12,4 +12,6 @@ require("plugin-config.nvim-tree")
 require("plugin-config.bufferline")
 -- 底部信息显示栏
 require("plugin-config.lualine")
+-- 模糊快速搜索
+require("plugin-config.telescope")
 

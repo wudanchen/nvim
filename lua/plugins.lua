@@ -16,6 +16,12 @@ packer.startup({
     -- 底部信息显示栏
     use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
     use("arkav/lualine-lsp-progress")
+    -- telescope （新增）
+    use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+    --------------------- LSP --------------------
+    use("williamboman/nvim-lsp-installer")
+    -- Lspconfig
+    use({ "neovim/nvim-lspconfig" })    
     -- 你的插件列表
 
   end,
@@ -29,10 +35,10 @@ packer.startup({
       -- default_url_format = "https://gitcode.net/mirrors/%s",
       -- default_url_format = "https://gitclone.com/github.com/%s",
     },
-    display = {
-        open_fn = function()
-            return require("packer.util").float({ border = "single" })
-        end,
-    },
+    -- display = {
+    --    open_fn = function()
+    --        return require("packer.util").float({ border = "single" })
+    --    end,
+    -- },
   },
 })
