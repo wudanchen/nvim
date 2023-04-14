@@ -14,4 +14,5 @@ require("plugin-config.bufferline")
 require("plugin-config.lualine")
 -- 模糊快速搜索
 require("plugin-config.telescope")
-
+-- 内置LSP (新增)
+require("lsp.setup")
