@@ -4,7 +4,10 @@ local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
 local opt = {noremap = true, silent = true }
 map("i", "jj", "<ESC>", opt)
-
+map("i", "<A-h>", "<Left>", opt)
+map("i", "<A-l>", "<Right>", opt)
+map("i", "<A-j>", "<Down>", opt)
+map("i", "<A-k>", "<Up>", opt)
 -- 取消 s 默认功能
 map("n", "s", "", opt)
 -- windows 分屏快捷键

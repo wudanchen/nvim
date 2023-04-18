@@ -19,9 +19,10 @@ packer.startup({
     -- telescope （新增）
     use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
     --------------------- LSP --------------------
-    use("williamboman/nvim-lsp-installer")
+    use({ "williamboman/mason.nvim" })
+    use({ "williamboman/mason-lspconfig.nvim" })
     -- Lspconfig
-    use({ "neovim/nvim-lspconfig" })    
+    use({ "neovim/nvim-lspconfig" })
     -- 你的插件列表
 
   end,

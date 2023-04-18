@@ -16,3 +16,4 @@ require("plugin-config.lualine")
 require("plugin-config.telescope")
 -- 内置LSP (新增)
 require("lsp.setup")
+
