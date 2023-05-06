@@ -1,3 +1,8 @@
+local opt = vim.opt
+local g = vim.g
+local config = require("core.utils").load_config()
+g.nvchad_theme = config.ui.theme
+g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
@@ -78,3 +83,6 @@ vim.o.pumheight = 10
 vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
+
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
