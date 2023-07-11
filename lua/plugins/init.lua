@@ -262,6 +262,18 @@ local default_plugins = {
       require("which-key").setup(opts)
     end,
   },
+
+  {
+    "phaazon/hop.nvim",
+    cmd = { "HopWord", "HopChar1" },
+    branch = "v2.0",
+    keys = { "s", "ss" },
+    config = function()
+      require("hop").setup()
+      vim.api.nvim_set_keymap("n", "s", "<cmd>HopWord<cr>", {})
+      vim.api.nvim_set_keymap("n", "ss", "<cmd>HopChar1<cr>", {})
+    end,
+  },
 }
 
 local config = require("core.utils").load_config()
