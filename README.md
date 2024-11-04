@@ -6,4 +6,8 @@
   1. 创建 fonts 存放目录 `mkdir -p ~/.local/share/fonts`
   2. 复制 fonts 到相应的路径  `cp <*.ttf> ~/.local/share/fonts/`
   3. 更新ubuntu fonts 缓存 `fc-cache -fv` 
-
+## 搭建nvim
+1. git clone 到本地路径
+2. 使用软连接ln -s  链接到 .config/nvim
+3. 解压 nvim.xz 到 .local/share/nvim 路径
+4. termtarl 打开nvim, 检查是否正常
